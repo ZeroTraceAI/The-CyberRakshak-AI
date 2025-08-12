@@ -14,6 +14,7 @@ import IpScan from "./pages/IpScan";
 import DomainScan from "./pages/DomainScan";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import EmailScan from "./pages/EmailScan";
 import { Layout } from "./components/layout/Layout";
 
 const queryClient = new QueryClient();
@@ -36,6 +37,7 @@ const App = () => (
                 <Route path="/domain-scan" element={<DomainScan />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/email-scan" element={<EmailScan />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>

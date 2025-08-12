@@ -1,5 +1,6 @@
 import { SiteHeader } from "./SiteHeader";
 import { PropsWithChildren } from "react";
+import { CyberBuddy } from "../CyberBuddy";
 
 export const Layout = ({ children }: PropsWithChildren) => {
   return (
@@ -10,7 +11,7 @@ export const Layout = ({ children }: PropsWithChildren) => {
       </main>
       <footer className="border-t">
         <div className="container py-6 text-sm text-muted-foreground flex flex-col md:flex-row items-center justify-between gap-3">
-          <p>© {new Date().getFullYear()} Threat Guardian X</p>
+          <p>© {new Date().getFullYear()} CyberRakshak</p>
           <nav aria-label="Footer" className="flex items-center gap-4">
             <a className="story-link" href="/about">About</a>
             <a className="story-link" href="/contact">Contact</a>
@@ -18,6 +19,7 @@ export const Layout = ({ children }: PropsWithChildren) => {
           </nav>
         </div>
       </footer>
+      <CyberBuddy />
     </div>
   );
 };

@@ -2,12 +2,13 @@ import { Link, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { Menu, Shield, ScanLine, Globe, Link2, Network, MapPinned, Info, Mail } from "lucide-react";
+import { Menu, Shield, ScanLine, Globe, Link2, Network, MapPinned, Info, Mail, MailCheck } from "lucide-react";
 import { ThemeToggle } from "../ThemeToggle";
 
 const navItems = [
   { to: "/file-scan", label: "File Scan", icon: ScanLine },
   { to: "/url-scan", label: "URL Scan", icon: Link2 },
+  { to: "/email-scan", label: "Email Scan", icon: MailCheck },
   { to: "/dns-scan", label: "DNS Scan", icon: Network },
   { to: "/ip-scan", label: "IP Scan", icon: MapPinned },
   { to: "/domain-scan", label: "Domain Scan", icon: Globe },
@@ -54,7 +55,7 @@ export const SiteHeader = () => {
               <SheetContent side="left" className="w-72">
                 <div className="flex items-center gap-2 mb-6">
                   <Shield className="h-5 w-5 text-primary" />
-                  <span className="font-semibold">Threat Guardian X</span>
+                  <span className="font-semibold">CyberRakshak</span>
                 </div>
                 <nav>
                   <ul className="space-y-1">
@@ -81,7 +82,7 @@ export const SiteHeader = () => {
 
           <Link to="/" className="flex items-center gap-2">
             <Shield className="h-5 w-5 text-primary" aria-hidden />
-            <span className="font-bold tracking-tight">Threat Guardian X</span>
+            <span className="font-bold tracking-tight">CyberRakshak</span>
           </Link>
         </div>
 

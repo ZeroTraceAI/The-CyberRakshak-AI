@@ -3,11 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SEO } from "@/components/SEO";
 import { Link } from "react-router-dom";
-import { Shield, ScanLine, Link2, Network, MapPinned, Globe, Mail, Info } from "lucide-react";
+import { Shield, ScanLine, Link2, Network, MapPinned, Globe, Mail, Info, MailCheck } from "lucide-react";
 
 const features = [
   { to: "/file-scan", title: "File Scan", desc: "Upload files for multi-engine AI analysis.", icon: ScanLine },
   { to: "/url-scan", title: "URL Scan", desc: "Check URLs for phishing and malware.", icon: Link2 },
+  { to: "/email-scan", title: "Email Scan", desc: "Analyze emails, headers and attachments.", icon: MailCheck },
   { to: "/dns-scan", title: "DNS Scan", desc: "Inspect DNS records and anomalies.", icon: Network },
   { to: "/ip-scan", title: "IP Scan", desc: "Geolocation and reputation scoring.", icon: MapPinned },
   { to: "/domain-scan", title: "Domain Scan", desc: "Reputation, WHOIS, and intel.", icon: Globe },
@@ -19,8 +20,8 @@ const Index = () => {
   return (
     <>
       <SEO
-        title="Threat Guardian X — AI Malware Detection Platform"
-        description="Futuristic, sleek platform for malware, URL, IP, DNS and domain scanning with real-time visualizations and premium UX."
+        title="CyberRakshak — Advanced Real-Time Threat Scanning"
+        description="CyberRakshak delivers expert-grade, real-time malware, URL, email, IP, DNS and domain scanning with sleek UX and instant insights."
         canonical="/"
       />
       <div className="min-h-[60vh] rounded-xl overflow-hidden relative mb-10">
@@ -36,7 +37,7 @@ const Index = () => {
               <Shield className="h-3.5 w-3.5" /> AI-driven threat intelligence
             </div>
             <h1 className="mt-4 text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
-              Malware Detection, Reimagined.
+              Advanced Real-Time Threat Scanning
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
               Scan files, URLs, IPs, DNS and domains with precision. Experience real-time visualizations and delightful performance.
